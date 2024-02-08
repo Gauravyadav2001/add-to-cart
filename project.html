@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Boxes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            justify-content: space-between;
+        }
+
+        .box {
+            width: 400px;
+            min-height: 120px;
+            background-color: #eee;
+            margin: 20px auto;
+            border-radius: 5px;
+
+        }
+
+        #a1 {
+            display: flex;
+            padding-top: 50px;
+        }
+
+        .option {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+
+        .option.color {
+            border: 3px solid white;
+        }
+
+        .option.size {
+            border: 1px solid red;
+            font-size: 10px;
+            text-align: center;
+            line-height: 30px;
+        }
+
+        .btn {
+            width: 400px;
+            height: 30px;
+            background-color: red;
+            color: white;
+            border: none;
+            text-align: center;
+            margin-left: 480px;
+            font-size: 22px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="box">
+            <div id="a1">
+                <div class="option color" style="background-color: red"></div>
+                <div style="font-size: large;">1 Unit</div> &nbsp;&nbsp;
+                <div style="background-color: red; color: white; margin-right: 80px;">10% Off </div>
+                <div>$10.00 USD</div>
+            </div>
+            <span style="margin-left: 30px;">Standard Price</span>
+            <span style="margin-left: 85px;"><del>$24.00 USD</del></span>
+        </div>
+
+        <div class="box" style="background-color:tan;">
+            <div id="a1">
+                <div class="option color" style="background-color: white"></div>
+                <div style="font-size: large;">2 Unit</div> &nbsp;&nbsp;
+                <div style="background-color: red; color: white; margin-right: 80px;">20% Off </div>
+                <div>$18.00 USD</div>
+            </div>
+            <div style="margin-left: 225px;"><del>$24.00 USD</del></div>
+            <span style="margin-left: 50px;">Size</span>
+            <span style="margin-left: 50px;">Color</span>
+            <div>
+                <span style="margin-left: 30px;">#1 <select>
+                        <option>S</option>
+                    </select></span>
+                <span style="margin-left: 30px;"><select>
+                        <option>Black</option>
+                    </select></span>
+            </div>
+            <br>
+            <div>
+                <span style="margin-left: 30px;">#2 <select>
+                        <option>S</option>
+                    </select></span>
+                <span style="margin-left: 30px;"><select>
+                        <option>Color</option>
+                    </select></span>
+            </div>
+        </div>
+
+        <div class="box" style="background-color: #eeeeee;">
+            <div id="a1">
+                <div class="option color" style="background-color: white"></div>
+                <div style="font-size: large;">3 Unit</div> &nbsp;&nbsp;
+                <div style="background-color: red; color: white; margin-right: 80px;">30% Off </div>
+                <div>$24.00 USD</div>
+            </div>
+            <span style="margin-left: 225px;"><del>$24.00 USD</del></span>
+        </div>
+
+        <div>
+            <span style="margin-left: 480px; color: red;">Free Delivery</span>
+            <span style="margin-left: 160px;">Total : $18.00 USD</span>
+        </div>
+
+        <div class="btn">
+            <div>+ Add to Cart</div>    
+        </div>
+        <div style="margin-left: 700px;">@ Powered by Gaurav</div>
+    </div>
+
+</body>
+
+</html>
